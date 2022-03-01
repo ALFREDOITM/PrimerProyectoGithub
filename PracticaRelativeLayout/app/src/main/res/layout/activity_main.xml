@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex1"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex3"
+        android:layout_below="@id/textView"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex4"
+        android:layout_toLeftOf="@id/button5"
+        android:layout_below="@id/button1"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex5"
+        android:layout_alignStart="@id/button2"
+        android:layout_below="@id/button2"
+        />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex6"
+        android:layout_toRightOf="@id/button5"
+        android:layout_below="@id/button3"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RL ex6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button5"
+        />
+</RelativeLayout>
