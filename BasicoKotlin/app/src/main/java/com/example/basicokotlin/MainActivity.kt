@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
 
         imprimir()
+        unSwitch()
+        unIf(true)
+        unFor()
+        unosWhile()
     }
 
     fun imprimir(){
@@ -46,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun unIf(a: Int): Boolean{
+    fun unIf(a: Boolean): Boolean{
         var array = arrayOf(1,2,3,4,5)
         if(a in array) // && || != < > ==
             return true
@@ -66,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.i("Basics", "6 downTo 0 step 2")
-        for(i in ){
+        for(i in o downTo 0 step 2){
 
         }
     }
@@ -77,7 +81,10 @@ class MainActivity : AppCompatActivity() {
             Log.i("Basics", x.toString())
             x++
         }
-        x=0
-        do
+        x = 0
+        do{
+            Log.i("Basics", x.toString())
+            x++
+        }while (x < 5)
     }
 }
